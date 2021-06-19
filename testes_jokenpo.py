@@ -20,7 +20,9 @@ regras='''- O torneio de Jo, Ken e Pô está preste a começar, mas antes vamos 
    -Jo, representa o poder Terra;
    -Ken, representa o poder Metal;
    -Po, representa o poder folha. 
-   3º Se divirta! '''
+   3º O ancião irá escolher o seu openente para lutar, atravès do sorteio da urna sagrada.
+   4º Se divirta! '''
+   
 pergunta=''
 rounds=0
 rodadas_ganhas=rodadas_peridas=empates=0
@@ -78,35 +80,3 @@ print()
 print(f'empates{empates}')
 print(f'ganhou {rodadas_ganhas}')
 print(f'perdeu {rodadas_peridas}')
-
-    
-               
-         
-         
-
-
-
-
-
-
-
-
-# if terra<metal:
-#      print('terra ganha de metal')
-# if terra<folha:
-#      print('folha ganha de terra')
-# if metal<folha:
-#      print('metal ganha de folha')
-# if metal>terra:
-#      print('metal perde para pedra')
-# if folha>terra:
-#      print('folha ganha de terra')
-# if folha>metal:
-#      print('folha perde para metal')
-
-
-
-   
-
-   
-   
