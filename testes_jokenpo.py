@@ -56,41 +56,50 @@ if guerreiro in "JO,KEN,PO":
                     sleep(3)
                     print('Juiz:\n- Ken o sevéro ganhou a batalha!')
                     rodadas_ganhas+=1
+                    print('='*60)
           if npc == 1 and guerreiro == 3:
                if guerreiro>npc:
                     print('Ancião:\n- A urna sagrada decidiu, seu openente será Jo!\n')
                     sleep(3)
                     print('Juiz:\n- Po o justo, perdeu a batalha!')
                     rodadas_peridas+=1
+                    print('='*60)
           if npc == 2 and guerreiro == 1:
                if npc>guerreiro:
                     print('\nAncião:\n- A urna sagrada decidiu, seu oponente será Ken!\n')
                     sleep(3)
                     print('Juiz:\n- Jo o destemido, perdeu a batalha!')
-                    rodadas_peridas+=1            
+                    rodadas_peridas+=1 
+                    print('='*60)           
           if npc == 2 and guerreiro == 3:
                if npc<guerreiro:
                     print('\nAncião:\n- A urna sagrada decidiu, seu oponente será Ken!\n')
                     sleep(3)
                     print('Juiz:\n- Po o just ganhou a batalha!')
-                    rodadas_ganhas+=1   
+                    rodadas_ganhas+=1  
+                    print('='*60) 
           if npc == 3 and guerreiro == 1:
                if npc>guerreiro:
                     print('\nAncião:\n- A urna sagra decidiu, seu oponente será Po!\n')
                     sleep(3)
                     print('Juiz:\n- Jo o destemido ganhou a batalha!')
                     rodadas_ganhas+=1
+                    print('='*60)
           if npc == 3 and guerreiro == 2:
                if npc>guerreiro:
                     print('\nAncião:\n- A urna sagrada decidiu, seu oponente será Po!\n')
                     sleep(3)
                     print('Juiz:\n- Ken o sevéro perdeu a batalha!')
                     rodadas_peridas+=1
+                    print('='*60)
           if npc==guerreiro:
-               print('empate')
+               print('\nAncião:\n- A urna sagra decidiu que seu oponente será você mesmo...\npelas sagras leis quando a urna escolha o próprio para lutar consigo mesmo\ndeclaramos empate!')
+               sleep(3)
                empates+=1
+               print('='*60)
           sleep(1)
      print()
-     print(f'empates{empates}')
-     print(f'ganhou {rodadas_ganhas}')
-     print(f'perdeu {rodadas_peridas}')
+     print("==============|PLACAR DO TORNEIO|===============")
+     print(f'Empates: {empates}')
+     print(f'Vitórias: {rodadas_ganhas}')
+     print(f'Derrotas: {rodadas_peridas}')
