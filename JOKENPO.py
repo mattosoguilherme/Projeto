@@ -31,7 +31,7 @@ rounds=0
 rodadas_ganhas=rodadas_peridas=empates=0
 while True:
    rounds=int(input('Quantos rounds você quer jogar? '))
-   
+
    guerreiro=str(input('Qual guerreiro é você? ')).upper().strip()
    
    if guerreiro in "JO,KEN,PO":
@@ -123,3 +123,5 @@ while True:
                continue
      if pergunta=="N":
           print('Obrigado por jogar!')
+          break
+     
