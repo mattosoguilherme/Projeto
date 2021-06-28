@@ -9,17 +9,17 @@ print('''                           []=JOGO DE DADOS=[]
 
 Galvão Boeno:
     - Meus amiiiigos da Blue, hoje vamos ver no campo a raça, determinação e a sagacidaaade desses 
-jogaores, maaas antes as passo a passo:
+jogadores, maaas antes ao passo a passo:
 
-1º Digite o quantidade de partidas.
+1º Digite o quantidade de partiiiidas.
 
 2º Digite seu nome e dos adverários, 
-lebrando que esse jogo foi feito para jogar em grupo, com 4 jogadores.
+lebrando que esse jogo foi feito para jogar em grupo, com 4 jogadooores.
 
 3º Se dirviiiiiita jogaaando! ''')
-sleep(2)
+sleep(5)
 print('''\nRonaldo:
-    - Galvão é bom lebrar que o computador vai jogar o dado pelo jogadores, eles só vão ter esperar pelo resultado na tela.''')
+    - Galvão, é bom lebrar que o computador vai jogar o dado pelo jogadores, eles só vão ter esperar pelo resultado na tela.''')
 
 sleep(2)
 print()
@@ -120,9 +120,12 @@ while True:
         print(fg.red + 'Opção invalida!Responda apenas com "S" para sim ou "N" para não.' + fg.rs)
         p = str(input('Dejesa jogar novamente?[S/N] ')).strip().upper()[0]
     if p == "S":
+        print()
+        print("-="*30)
+        print()
         continue
     else:
-        print(fg.li_yelow+'\nGalvão:\n- Obrigado pela sua audiência! Até a próxima.'+fg.rs)
+        print(fg.li_yellow + '\nGalvão:\n- Obrigado pela sua audiência! Até a próxima.' + fg.rs)
         break
 
    
