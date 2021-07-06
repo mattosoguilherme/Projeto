@@ -24,8 +24,8 @@ print('''\nRonaldo:
 sleep(2)
 print()
 
-while True:
-    #variaveis com input para coletar informações do usuário final.
+while True: 
+#variaveis com input para coletar informações do usuário final.
     print()
     quantidade_rodadas = int(input('Quantas rodadas você quer jogar?\n'))
     player1 = input('Qual o nome do 1º jogador?\n').capitalize()
@@ -34,7 +34,7 @@ while True:
     player4 =  input('Qual o nome do 4º jogador?\n').capitalize()
     print()
     vitoria_jgd1=vitoria_jgd2=vitoria_jgd3=vitoria_jgd4=0
-    #laço de repetição para simular "tela de carregamento".
+#laço de repetição para simular "tela de carregamento".
     for o in range(5):
         print("............"*2, end='')
         sleep(1)
@@ -42,7 +42,7 @@ while True:
 
     print()
 
-    #laço de repetição condicionado com parâmetros inseridos pelo usuário.
+#laço de repetição condicionado com parâmetros inseridos pelo usuário.
     for r in range(quantidade_rodadas):
         dados = {player1:randint(1,6),player2:randint(1,6),player3:randint(1,6),player4:randint(1,6)} #dicionário criado para alocar valores aleatórios gerados.
         v = sorted(dados.items(), key=itemgetter(1), reverse=True) # a variavel 'v' está recebendo o dicionário já formatado em ordem decrescente
@@ -52,7 +52,7 @@ while True:
             print(f'{k} tirou {x} no dado') #como é um laço condicionado ele vai varrer a o dicionario, mostrar cada chave e valor e finalizar
             sleep(1)
         print()
-    #condições para verficar quem venceu cada roda de cada volta no laço.
+#condições para verficar quem venceu cada roda de cada volta no laço.
         if dados[player1]>= dados[player2] and dados[player1]>= dados[player3] and dados[player1] >= dados[player4]:
             print(fg.green + f' \n{player1} venceu está rodada!\n'+ fg.rs)
             vitoria_jgd1+=1 # a cada volta vai irá contabilizar quantas vitorias o jogador teve
@@ -78,7 +78,7 @@ while True:
     {player3} ganhou um total de {vitoria_jgd3} rodadas.
     {player4} ganhou um total de {vitoria_jgd4} rodadas.''')
 
-    #condicinais criadas para verificar e mostrar uma tela dizendo quais jogadores venceram mais vezes.
+#condicinais criadas para verificar e mostrar uma tela dizendo quais jogadores venceram mais vezes.
     if vitoria_jgd1 >= vitoria_jgd2 and vitoria_jgd1 >= vitoria_jgd3 and vitoria_jgd1 >= vitoria_jgd4:
         sg.theme('LightGreen5') 
         layout = [
